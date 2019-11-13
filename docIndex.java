@@ -73,7 +73,7 @@ public class docIndex {
 				//iterate through the document one line at a time
 				for(String line; (line = br.readLine()) != null;){
 
-					//remove the zero width space character
+					//remove the zero width space character "\u200B"
 					line = line.replaceAll("[\\p{C}]", "");
 
 					//start of a document's content
